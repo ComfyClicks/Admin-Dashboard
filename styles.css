@@ -1,0 +1,28 @@
+#container {
+  display: grid;
+  grid-template-columns: 21% 79%;
+  grid-template-rows: 22% 78%;
+  height: 100vh;
+}
+
+header {
+  background-color: white;
+  grid-column: 2 / -1;
+  grid-row: 1 / 1;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+
+
+#sidebar {
+  background-color: lightblue;
+  grid-column: 1 / 1;
+  grid-row: 1 / -1;
+}
+
+main {
+  background-color: lightgray;
+  grid-column: 2 / -1;
+  grid-row: 2 / -1;
+}
