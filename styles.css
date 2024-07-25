@@ -1,3 +1,7 @@
+body {
+  font-family: Roboto, Arial;
+}
+
 #container {
   display: grid;
   grid-template-columns: 21% 79%;
@@ -6,19 +10,82 @@
 }
 
 header {
-  background-color: white;
+  background-color: white;  
   grid-column: 2 / -1;
   grid-row: 1 / 1;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 45% 55%;
 }
 
+#topHeader {
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 70% 40%;
+  align-items: center;
+}
 
+#inputDiv {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  margin-left: 2rem;
+}
+
+#inputDiv input {
+  width: 400px;
+}
+
+#userDiv {
+  display: grid;
+  grid-template-columns: 25% 25% 50%;
+  align-items: center;
+  margin-right: 5rem;
+  align-items: center;
+}
+
+#bottomHeader {
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: 10% 50% 40%;
+  align-items: center;
+}
+
+#greetingImage {
+  grid-column: 1 / 1;
+}
+
+#greeting {
+  grid-column: 2 / 2;
+}
+
+#headerButtons {
+  display: grid;
+  grid-column: 3 / 3;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+button {
+  background-color: blue;
+  color: white;
+  border-style: none;
+  width: 90px;
+  height: 30px;
+  border-radius: 14px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: darkblue;
+  transform: scale(1.03);
+}
 
 #sidebar {
   background-color: lightblue;
   grid-column: 1 / 1;
   grid-row: 1 / -1;
+}
+
+#sidebar ul {
+  list-style: none;
 }
 
 main {
