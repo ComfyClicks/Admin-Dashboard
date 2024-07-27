@@ -1,3 +1,10 @@
+:root {
+  --blue-color: #1992d4;
+  --gray-color: #e2e8f0; 
+  --yellow-color: #facc15;
+}
+
+
 body {
   font-family: Roboto, Arial;
 }
@@ -64,7 +71,7 @@ header {
 }
 
 button {
-  background-color: blue;
+  background-color: var(--blue-color) ;
   color: white;
   border-style: none;
   width: 90px;
@@ -79,17 +86,35 @@ button:hover {
 }
 
 #sidebar {
-  background-color: lightblue;
+  background-color: var(--blue-color);
   grid-column: 1 / 1;
   grid-row: 1 / -1;
+  color: white;
 }
 
 #sidebar ul {
   list-style: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#sidebar ul li {
+  margin-bottom: 20px;
 }
 
 main {
-  background-color: lightgray;
+  background-color: var(--gray-color);
   grid-column: 2 / -1;
   grid-row: 2 / -1;
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+
+#projects {
+  grid-column: 1 / 1;
+}
+
+cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
