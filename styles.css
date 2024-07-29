@@ -90,6 +90,7 @@ button:hover {
   grid-column: 1 / 1;
   grid-row: 1 / -1;
   color: white;
+  height: 100vh;
 }
 
 #sidebar ul {
@@ -108,13 +109,44 @@ main {
   grid-row: 2 / -1;
   display: grid;
   grid-template-columns: 75% 25%;
+  overflow: auto;
+  height: 100vh;
 }
 
 #projects {
   grid-column: 1 / 1;
+  display: grid;
 }
 
-cardsContainer {
+#cardsContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 310px));
+  gap: 1rem;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.cards {
+  background-color: white;
+}
+
+aside {
+  grid-column: 2 / 2;
+  display: grid;
+  padding-right: 2rem;
+  width: 100%;
+}
+
+#announcements {
+  background-color: white;
+  padding: 0 2rem;
+}
+
+#trending {
+  background-color: white;
+  display: grid;
+  padding: 0 1rem;
+}
+
+#trending li {
+  list-style: none;
 }
