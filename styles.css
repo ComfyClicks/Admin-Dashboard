@@ -110,7 +110,7 @@ main {
   display: grid;
   grid-template-columns: 75% 25%;
   overflow: auto;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 #projects {
@@ -127,26 +127,39 @@ main {
 
 .cards {
   background-color: white;
+  border-radius: 6px;
 }
 
 aside {
   grid-column: 2 / 2;
   display: grid;
   padding-right: 2rem;
-  width: 100%;
+  /* width: 100%; */
 }
 
 #announcements {
   background-color: white;
   padding: 0 2rem;
+  border-radius: 6px;
 }
 
 #trending {
   background-color: white;
   display: grid;
+  grid-template-columns: auto 25% 75%;
+  /* grid-template-rows: auto 4fr; */
   padding: 0 1rem;
+  border-radius: 6px;
 }
 
 #trending li {
   list-style: none;
+}
+
+.avatar {
+  grid-column: 1 / 2;
+}
+
+.trending-info {
+  grid-column: 2 / 3;
 }
