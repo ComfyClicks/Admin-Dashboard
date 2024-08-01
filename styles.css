@@ -91,6 +91,32 @@ button:hover {
   grid-row: 1 / -1;
   color: white;
   height: 100vh;
+  display: grid;
+  grid-template-rows: 10% 45% 45%;
+}
+
+#sidebar-logo {
+  font-size: 19px;
+  grid-row: 1 / 2;
+  display: flex;
+  align-items: center
+}
+
+#first-list {
+  grid-row: 2 / 3;
+  overflow: auto;
+}
+
+#second-list {
+  grid-row: 3 / 4;
+}
+
+.nav-item {
+  font-size: 18px;
+}
+
+.icon {
+  padding-right: 9px;
 }
 
 #sidebar ul {
@@ -110,7 +136,7 @@ main {
   display: grid;
   grid-template-columns: 75% 25%;
   overflow: auto;
-  /* height: 100vh; */
+  padding-bottom: 20px;
 }
 
 #projects {
@@ -118,48 +144,79 @@ main {
   display: grid;
 }
 
+#projects h2 {
+  padding-left: 1.5rem;
+}
+
 #cardsContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 310px));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 330px));
   gap: 1rem;
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 1.5rem 1rem 1.5rem;
+}
+
+.container-titles {
+  margin-bottom: 12px;
 }
 
 .cards {
   background-color: white;
-  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border-left: 6px solid #f0b429;
+  height: 13.5rem;
+  padding: 0 1rem;
 }
 
 aside {
   grid-column: 2 / 2;
   display: grid;
   padding-right: 2rem;
-  /* width: 100%; */
 }
 
 #announcements {
   background-color: white;
   padding: 0 2rem;
-  border-radius: 6px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#announcements h5 {
+  margin-bottom: 1px;
+}
+
+#announcements p {
+  font-size: 12px;
+  padding-bottom: .7rem;
+}
+
+#announcements p:nth-child(2),
+#announcements p:nth-child(4) {
+  border-bottom: 2px solid var(--gray-color);
 }
 
 #trending {
   background-color: white;
-  display: grid;
-  grid-template-columns: auto 25% 75%;
-  /* grid-template-rows: auto 4fr; */
-  padding: 0 1rem;
-  border-radius: 6px;
+  border-radius: 8px;
+  font-size: 13px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #trending li {
   list-style: none;
 }
 
-.avatar {
-  grid-column: 1 / 2;
+
+.trending-item {
+  display: flex;
+  align-items: center;
+  padding: 4px;
 }
 
-.trending-info {
-  grid-column: 2 / 3;
+.trending-info p {
+  margin: 4px 0px;
+}
+
+.trending-item .avatar {
+  margin-right: 5px;
 }

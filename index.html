@@ -14,7 +14,7 @@
       <div id="topHeader">
         <div id="inputDiv">  
           <img src="" alt="*" />
-          <input>
+          <input placeholder="Search" />
         </div>
         <div id="userDiv">
           <img src="" alt="Bell" />
@@ -38,30 +38,57 @@
       </div>
     </header>
 
-    <div id="sidebar">
-      <div id="navLogo">DASHBOARD</div>
-      <nav id="firstList">
-        <ul>
-          <li>Home</li>
-          <li>Profile</li>
-          <li>Messages</li>
-          <li>History</li>
-          <li>Tasks</li>
-          <li>Communities</li>
-        </ul>
-      </nav>
-      <nav id="secondList">
-        <ul>
-          <li>Settings</li>
-          <li>Support</li>
-          <li>Privacy</li>
-        </ul>
-      </nav>
-    </div>
+    <nav id="sidebar">
+      <div id="sidebar-logo">
+        <img src="" alt="%" />
+        <h1>Dashboard</h1>
+      </div>
+
+      <ul id="first-list">
+        <li class="nav-item">
+            <span class="icon">🏠</span>
+            <span class="link-text">Home</span>
+        </li>
+        <li class="nav-item">
+          <span class="icon">👤</span>
+          <span class="link-text">Profile</span>
+        </li>
+        <li class="nav-item">
+          <span class="icon">✉️</span>
+          <span class="link-text">Messages</span>
+        </li>
+        <li class="nav-item">
+          <span class="icon">🕒</span>
+          <span class="link-text">History</span>
+        </li>
+        <li class="nav-item">
+          <span class="icon">✅</span>
+          <span class="link-text">Tasks</span>
+        </li>
+        <li class="nav-item">
+          <span class="icon">👥</span>
+          <span class="link-text">Communities</span>
+        </li>
+      </ul>
+      <ul id="second-list">
+        <li class="nav-item">
+          <span class="icon">⚙️</span>
+          <span class="link-text">Settings</span>
+        </li>
+        <li class="nav-item">
+          <span class="icon">❓</span>
+          <span class="link-text">Support</span>
+        </li>
+        <li class="nav-item">
+          <span class="icon">🔒</span>
+          <span class="link-text">Privacy</span>
+        </li>
+      </ul>
+    </nav>
 
     <main>
       <div id="projects">
-        <h2>Your Projects</h2>
+        <h2 class="container-titles">Your Projects</h2>
         <div id="cardsContainer">
           <div class="cards">
             <h3>Super Cool Project</h3>
@@ -120,16 +147,16 @@
         </div>
       </div>
       <aside>
-        <h2>Announcements</h2>
+        <h2 class="container-titles">Announcements</h2>
         <div id="announcements">
-          <h3>Site Maintenance</h3>
+          <h5 >Site Maintenance</h5  >
           <p>Computer network will be offline on July 28th for Maintenance</p>
-          <h3>Community Share Day</h3>
+          <h5 >Community Share Day</h5 >
           <p>Jully 25th will be the 5th annual employee volunteer day</p>
-          <h3>Updated Privacy Policy</h3>
+          <h5 >Updated Privacy Policy</h5  >
           <p>Privavcy policy has been updated. Please review updated policies in the privacy polity page.</p>
         </div>
-        <h2>Trending</h2>
+        <h2 class="container-titles">Trending</h2>
         <div id="trending">
           <ul>
             <li class="trending-item">
