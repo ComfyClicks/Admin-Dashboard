@@ -92,14 +92,21 @@ button:hover {
   color: white;
   height: 100vh;
   display: grid;
-  grid-template-rows: 10% 45% 45%;
+  grid-template-rows: 10% 37% 53%;
 }
 
 #sidebar-logo {
   font-size: 19px;
   grid-row: 1 / 2;
   display: flex;
-  align-items: center
+  align-items: center;
+  margin: 18px;
+}
+
+#sidebar-logo img {
+  height: 55px;
+  width: 55px;
+  margin: 0 10px;
 }
 
 #first-list {
@@ -112,11 +119,25 @@ button:hover {
 }
 
 .nav-item {
-  font-size: 18px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item:hover .icon,
+.nav-item:hover .link-text {
+  transform: scale(1.03);
+}
+
+.icon,
+.link-text {
+  transition: transform 0.3s ease;
 }
 
 .icon {
-  padding-right: 9px;
+  height: 30px;
+  width: 30px;
+  margin-right: 25px;
 }
 
 #sidebar ul {
@@ -126,7 +147,7 @@ button:hover {
 }
 
 #sidebar ul li {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 main {
