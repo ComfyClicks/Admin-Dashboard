@@ -12,7 +12,7 @@ body {
 #container {
   display: grid;
   grid-template-columns: 21% 79%;
-  grid-template-rows: 22% 78%;
+  grid-template-rows: 16% 84%;
   height: 100vh;
 }
 
@@ -22,52 +22,99 @@ header {
   grid-row: 1 / 1;
   display: grid;
   grid-template-rows: 45% 55%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  padding-right: 20px;
 }
 
-#topHeader {
+#top-header {
   grid-row: 1 / 2;
   display: grid;
-  grid-template-columns: 70% 40%;
+  grid-template-columns: 70% 25%;
   align-items: center;
+  margin-top: 10px;
 }
 
-#inputDiv {
+#input-div {
   display: grid;
   grid-template-columns: 10% 90%;
   margin-left: 2rem;
 }
 
-#inputDiv input {
-  width: 400px;
+#search {
+  width: 85%;
+  border-radius: 15px;
+  border: none;
+  background-color: var(--gray-color);
 }
 
-#userDiv {
+#search:focus {
+  outline: none;
+}
+
+#user-div {
   display: grid;
-  grid-template-columns: 25% 25% 50%;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  margin-right: 5rem;
-  align-items: center;
+  justify-items: center;
 }
 
-#bottomHeader {
+#user-div p {
+  font-weight: bold;
+}
+
+#bell {
+  height: 25px;
+  width: 25px;
+}
+
+#avi {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+#bottom-header {
   grid-row: 2 / 3;
   display: grid;
-  grid-template-columns: 10% 50% 40%;
+  grid-template-columns: 9% 61% 30%;
   align-items: center;
+  margin-left: 4%;
 }
 
-#greetingImage {
+#profile-pic {
   grid-column: 1 / 1;
+}
+
+#profile-pic img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
 }
 
 #greeting {
   grid-column: 2 / 2;
 }
 
+#hi {
+  font-weight: bold;
+}
+
+#user {
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: -8px;
+}
+
 #headerButtons {
   display: grid;
   grid-column: 3 / 3;
   grid-template-columns: repeat(3, 1fr);
+}
+
+#input-div img {
+  height: 30px;
+  width: 30px;
 }
 
 button {
@@ -119,7 +166,7 @@ button:hover {
 }
 
 .nav-item {
-  font-size: 25px;
+  font-size: 23px;
   display: flex;
   align-items: center;
 }
@@ -157,7 +204,8 @@ main {
   display: grid;
   grid-template-columns: 75% 25%;
   overflow: auto;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  padding-top: 15px;
 }
 
 #projects {
@@ -171,13 +219,13 @@ main {
 
 #cardsContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 330px));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 1rem;
   padding: 0 1.5rem 1rem 1.5rem;
 }
 
 .container-titles {
-  margin-bottom: 12px;
+  margin-bottom: 0px;
 }
 
 .cards {
@@ -187,6 +235,12 @@ main {
   border-left: 6px solid #f0b429;
   height: 13.5rem;
   padding: 0 1rem;
+  transition: transform 0.5s ease;
+
+}
+
+.cards:hover {
+  transform: scale(1.02);
 }
 
 aside {
@@ -221,23 +275,27 @@ aside {
   border-radius: 8px;
   font-size: 13px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  align-content: center;
 }
 
 #trending li {
   list-style: none;
 }
 
-
 .trending-item {
   display: flex;
   align-items: center;
-  padding: 4px;
+  padding: 8px;
 }
 
 .trending-info p {
   margin: 4px 0px;
 }
 
-.trending-item .avatar {
-  margin-right: 5px;
+.avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: -25px;
 }
