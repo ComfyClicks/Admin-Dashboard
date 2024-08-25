@@ -11,7 +11,7 @@ body {
 
 #container {
   display: grid;
-  grid-template-columns: 21% 79%;
+  grid-template-columns: 280px 1fr;
   grid-template-rows: 16% 84%;
   height: 100vh;
 }
@@ -128,7 +128,7 @@ button {
 }
 
 button:hover {
-  background-color: darkblue;
+  background-color: #157ab0;
   transform: scale(1.03);
 }
 
@@ -139,11 +139,11 @@ button:hover {
   color: white;
   height: 100vh;
   display: grid;
-  grid-template-rows: 10% 37% 53%;
+  grid-template-rows: 1fr 4fr 4fr;
 }
 
 #sidebar-logo {
-  font-size: 19px;
+  font-size: 17px;
   grid-row: 1 / 2;
   display: flex;
   align-items: center;
@@ -166,7 +166,7 @@ button:hover {
 }
 
 .nav-item {
-  font-size: 23px;
+  font-size: 21px;
   display: flex;
   align-items: center;
 }
@@ -202,10 +202,15 @@ main {
   grid-column: 2 / -1;
   grid-row: 2 / -1;
   display: grid;
-  grid-template-columns: 75% 25%;
+  grid-template-columns: 3fr 1fr;
   overflow: auto;
   padding-bottom: 10px;
   padding-top: 15px;
+  align-items: start;
+}
+
+main h2 {
+  padding-bottom: 15px;
 }
 
 #projects {
@@ -219,9 +224,11 @@ main {
 
 #cardsContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
   padding: 0 1.5rem 1rem 1.5rem;
+  align-content: start;
+  /* align-items: start; */
 }
 
 .container-titles {
@@ -236,7 +243,6 @@ main {
   height: 13.5rem;
   padding: 0 1rem;
   transition: transform 0.5s ease;
-
 }
 
 .cards:hover {
@@ -254,6 +260,7 @@ aside {
   padding: 0 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
 #announcements h5 {
