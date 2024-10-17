@@ -108,8 +108,8 @@ header {
 
 #headerButtons {
   display: grid;
-  grid-column: 3 / 3;
-  grid-template-columns: repeat(3, 1fr);
+  /* grid-column: 3 / 3; */
+  grid-template-columns: repeat(3, min-content);
 }
 
 #input-div img {
@@ -236,6 +236,9 @@ main h2 {
 }
 
 .cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -247,6 +250,26 @@ main h2 {
 
 .cards:hover {
   transform: scale(1.02);
+}
+
+.card-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-icons ul {
+  list-style: none;
+  display: flex;
+}
+
+.card-icons li {
+  margin-left: 6px;
+}
+
+.card-icons button {
+  height: 35px;
+  width: 35px;
+  background-color: white;
 }
 
 aside {
