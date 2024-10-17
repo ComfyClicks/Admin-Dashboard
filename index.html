@@ -9,40 +9,37 @@
 </head>
 <body>
   <div id="container">
-
     <header>
-      <div id="top-header">
-        <div id="input-div">  
-          <img src="assets/magnify.svg" alt="search" />
-          <input placeholder="" id="search" />
-        </div>
-        <div id="user-div">
-          <img src="assets/bell-ring-outline.svg" alt="bell" id="bell"/>
-          <img src="assets/user.jpg" alt="avi" id="avi"/>
-          <p>ComfyClicks</p>
-        </div>
+      <div id="search">  
+        <img src="assets/magnify.svg" alt="search" />
+        <input placeholder="" id="searchbar" />
       </div>
-      <div id="bottom-header">
+      <div id="user-nav">
+        <img src="assets/bell-ring-outline.svg" alt="bell" id="bell"/>
+        <img src="assets/user.jpg" alt="avi" id="avi"/>
+        <p>ComfyClicks</p>
+      </div>
+      <div id="greeting">
         <div id="profile-pic">
           <img src="assets/user.jpg" alt="profile-pic" />
         </div>
-        <div id="greeting">
+        <div id="user-message">
           <p id="hi">Hi there,</p>
           <p id="user">ComfyClicks (@ComfyClicks)</p>
         </div>
-        <div id="headerButtons">
-          <ul>
-            <li>
-              <button>New</button>
-            </li>
-            <li>
-              <button>Upload</button>
-            </li>
-            <li>
-              <button>Share</button>
-            </li>
-          </ul>
-        </div>
+      </div>
+      <div id="user-buttons">
+        <ul>
+          <li>
+            <button aria-label="New">New</button>
+          </li>
+          <li>
+            <button aria-label="Upload">Upload</button>
+          </li>
+          <li>
+            <button aria-label="Share">Share</button>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -145,7 +142,7 @@
             </div>
           </div>
           <div class="cards">
-            <h3>Impossible Appp 1</h3>
+            <h3>Impossible App 1</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, perspiciatis.</p>
             <div class="card-icons">
               <ul>
