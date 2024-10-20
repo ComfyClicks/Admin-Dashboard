@@ -20,6 +20,7 @@ header {
   display: grid;
   font-weight: bold;
   background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px 60px;
   gap: 20px;
   grid-template: 40px 100px / 2fr 1fr;
@@ -221,7 +222,6 @@ main h2 {
   gap: 1rem;
   padding: 0 1.5rem 1rem 1.5rem;
   align-content: start;
-  /* align-items: start; */
 }
 
 .container-titles {
