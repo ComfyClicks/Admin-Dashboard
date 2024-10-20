@@ -85,6 +85,7 @@ header * {
   gap: 20px;
   justify-content: start;
   grid-template-columns: min-content max-content;
+  margin-bottom: 25px;
 }
 
 #profile-pic img {
@@ -103,6 +104,7 @@ header * {
   grid-area: user-buttons;
   display: grid;
   justify-content: end;
+  margin-bottom: 15px;
 }
 
 #user-buttons ul {
