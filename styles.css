@@ -27,6 +27,7 @@ header {
   grid-template-areas:
       "search user-nav"
       "greeting user-buttons";
+  z-index:1;
 }
 
 header * {
