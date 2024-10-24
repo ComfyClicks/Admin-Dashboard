@@ -60,7 +60,7 @@ header * {
   grid-area: user-nav;
   display: grid;
   justify-content: end;
-  gap: 20px;
+  gap: 16px;
   grid-template-columns: repeat(2, min-content) max-content;
 }
 
@@ -71,6 +71,15 @@ header * {
 #bell {
   height: 25px;
   width: 25px;
+}
+
+#bell:hover {
+  transform: scale(1.06);
+}
+
+#user-nav p:hover,
+#avi:hover {
+  transform: scale(1.02);
 }
 
 #avi {
