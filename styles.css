@@ -47,6 +47,10 @@ header * {
   width: 30px;
 }
 
+#search img:hover {
+  transform: scale(1.04);
+}
+
 #searchbar {
   height: 30px;
   width: 500px;
@@ -54,6 +58,7 @@ header * {
   border-radius: 20px;
   border: none;
   background-color: var(--gray-color);
+  padding-left: 10px;
 }
 
 #user-nav {
