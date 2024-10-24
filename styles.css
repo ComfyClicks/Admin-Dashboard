@@ -58,7 +58,7 @@ header * {
   border-radius: 20px;
   border: none;
   background-color: var(--gray-color);
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 #user-nav {
@@ -70,7 +70,7 @@ header * {
 }
 
 #searchbar:focus {
-  outline: none;
+  outline: 2px solid #1992d4;
 }
 
 #bell {
